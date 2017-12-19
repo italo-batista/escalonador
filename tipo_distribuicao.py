@@ -16,13 +16,15 @@ class Distribuicao(object):
 	def gerar():
 
 		if self.tipo == TipoDistribuicao.UNIFORME:
-			low, high = params
-			dist = random.uniform(low, high)
+			inf, sup = params
+			dist = random.uniform(inf, sup)
 
 		elif self.tipo == TipoDistribuicao.EXPOENCIAL:
 			lambd = params[0]
 			dist = random.expovariate(lambd)
 
 		elif self.tipo == TipoDistribuicao.NORMAL:
-			mean, standard_deviation = params
-			dist = random.normalvariate(mean, standard_deviation) 
+			media, desvio_padra = params
+			dist = random.normalvariate(media, desvio_padra)
+
+		return dist
