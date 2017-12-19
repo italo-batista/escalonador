@@ -10,7 +10,7 @@ class Escalonador(object):
         self.fila = Queue()
         self.agenda = {}
         self.momemto = current_time()
-        self.tipo_distribuicao = tipo_distribuicao_chegada #removi o metodo. passa o numero msm.
+        self.tipo_distribuicao = tipo_distribuicao_chegada 
         self.params_distribuicao = params_distribuicao
         self.tempo_medio_servico = tempo_medio_servico
         self.duracao_simulacao = duracao_simulacao

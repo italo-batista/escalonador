@@ -4,7 +4,7 @@ class Servidor(object):
         self.estado = True
 
     def isLivre(self):
-    	return estado
+    	return self.estado
 
     def liberar(self):
     	self.estado = True
