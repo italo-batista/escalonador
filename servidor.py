@@ -1,14 +1,14 @@
 class Servidor(object):
-    
-    def __init__(self):
-        self.estado = True
+	
+	def __init__(self):
+		self.livre = True
 
-    def isLivre(self):
-    	return self.estado
+	def is_livre(self):
+		return self.livre
 
-    def liberar(self):
-    	self.estado = True
+	def liberar(self):
+		self.livre = True
 
    	def ocupar(self):
-   		self.estado = False
-       
+   		self.livre = False
+	   

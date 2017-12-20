@@ -1,3 +1,7 @@
 import time
+
 def current_time():
-	return lambda: int(round(time.time() * 1000))
+	"""Returns time since the epoch in seconds"""
+	return int(round(time.time()))
+
+

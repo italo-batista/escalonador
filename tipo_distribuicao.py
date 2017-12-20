@@ -1,30 +1,30 @@
+from enum import Enum
 import numpy as np
 import random
 
-class TipoDistribuicao(enum):
-    self.UNIFORME = 1
-    self.EXPOENCIAL = 2
-    self.NORMAL = 3
+class TipoDistribuicao(Enum):
+	UNIFORME = 1
+	EXPOENCIAL = 2
+	NORMAL = 3
 
 class Distribuicao(object):
 	
-	def __init__(self, tipo, media, params):
+	def __init__(self, tipo, params):
 		self.tipo = tipo
-		self.media = media
 		self.params = params
 		
-	def gerar():
+	def sample(self):
 
 		if self.tipo == TipoDistribuicao.UNIFORME:
-			inf, sup = params
+			inf, sup = self.params
 			dist = random.uniform(inf, sup)
 
 		elif self.tipo == TipoDistribuicao.EXPOENCIAL:
-			lambd = params[0]
+			lambd = 1.0 / self.params[0]
 			dist = random.expovariate(lambd)
 
 		elif self.tipo == TipoDistribuicao.NORMAL:
-			media, desvio_padra = params
+			media, desvio_padra = self.params
 			dist = random.normalvariate(media, desvio_padra)
 
 		return dist
