@@ -1,10 +1,11 @@
 # coding: utf-8
+import time
 from servidor import Servidor
 from fregues import Fregues
 from escalonador import Escalonador
 from evento import Evento, TipoEvento
 from time_helper import current_time
-import time
+from file_helper import write_results
 from tipo_distribuicao import TipoDistribuicao, Distribuicao
 
 
@@ -74,6 +75,17 @@ class Simulador(object):
 						print 'not free, enfileirar cliente'
 
 				time.sleep(0.9)
+
+			write_results(
+				self.tipo_distribuicao_chegada,
+				self.params_distribuicao,
+				self.tempo_medio_servico,
+				self.duracao_simulacao,
+				self.requisicoes_recebidas,
+				escalonador.get_qnt_requisicoes_atendidas(),
+				escalonador.get_tempo_medio_atendendo(),
+				escalonador.get_qnt_elementos_em_espera()
+			)
 
 	def fim_execucao(self, tempo_inicio):
 		delta = current_time() - self.tempo_inicio

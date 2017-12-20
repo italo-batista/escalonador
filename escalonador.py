@@ -26,10 +26,23 @@ class Escalonador(object):
 
     def escalonar(self, fregues):        
         self.servidor.ocupar()
+        self.requisicoes_atendidas += 1
         tempo_para_termino = self.distribuicao.sample()
         fregues.finalizar(tempo_para_termino + current_time())
+        self.__update_tempo_medio_atendendo(fregues)
+        return tempo_para_termino + current_time()
+    
+    def __update_tempo_medio_atendendo(self, fregues):
         tempo_para_ser_atendido = fregues.get_tempo_para_ser_atendido()
         self.tempo_medio_atendendo = (
-                self.tempo_medio_atendendo * (self.requisicoes_atendidas - 1) + tempo_para_ser_atendido
-                ) / (self.requisicoes_atendidas + 1)
-        return tempo_para_termino + current_time()
+                self.tempo_medio_atendendo * (self.requisicoes_atendidas - 1) 
+                + tempo_para_ser_atendido ) / (self.requisicoes_atendidas + 1)
+
+    def get_qnt_requisicoes_atendidas(self):
+        return self.requisicoes_atendidas
+	
+    def get_tempo_medio_atendendo(self):
+        return self.tempo_medio_atendendo
+
+    def get_qnt_elementos_em_espera(self):
+        return self.fila.qsize()
