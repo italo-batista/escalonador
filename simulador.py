@@ -3,7 +3,6 @@ import time
 from servidor import Servidor
 from fregues import Fregues
 from escalonador import Escalonador
-from evento import Evento, TipoEvento
 from time_helper import current_time
 from file_helper import write_results
 from tipo_distribuicao import TipoDistribuicao, Distribuicao
@@ -73,7 +72,8 @@ class Simulador(object):
 						fregues = Fregues()
 						escalonador.enfileirar(fregues)
 						print 'not free, enfileirar cliente'
-
+				
+				escalonador.update_qnt_media_elems_na_fila(self.get_momento())
 				time.sleep(0.9)
 
 			write_results(
@@ -84,7 +84,7 @@ class Simulador(object):
 				self.requisicoes_recebidas,
 				escalonador.get_qnt_requisicoes_atendidas(),
 				escalonador.get_tempo_medio_atendendo(),
-				escalonador.get_qnt_elementos_em_espera()
+				escalonador.get_qnt_media_elems_na_fila()
 			)
 
 	def fim_execucao(self, tempo_inicio):
@@ -96,6 +96,10 @@ class Simulador(object):
 				self.requisicoes_recebidas += 1
 				return True
 			return False
+	
+	def get_momento(self):
+		print current_time() - self.tempo_inicio
+		return current_time() - self.tempo_inicio
 
 sim = Simulador(TipoDistribuicao.EXPOENCIAL, [2], 1, 3, 2)
 sim.run()
