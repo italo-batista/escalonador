@@ -1,9 +1,0 @@
-Distribuição de chegada: Exponencial
-Parametros: Lambda: 1.00
-Valor médio serviço passado: 1
-Duração da Simulação: 10
-Quantidade de Requisições recebidas: 9
-Quantidade de Requisições atendidas: 9
-Tempo médio de atendimento: 0.555151136716
-Quantidade média de elementos em espera: 0
-

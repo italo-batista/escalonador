@@ -97,5 +97,5 @@ class Simulador(object):
 				return True
 			return False
 
-sim = Simulador(TipoDistribuicao.EXPOENCIAL, [1, 50], 1, 10, 1)
+sim = Simulador(TipoDistribuicao.EXPOENCIAL, [2], 1, 3, 2)
 sim.run()

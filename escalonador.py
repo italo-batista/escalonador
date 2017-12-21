@@ -6,7 +6,6 @@ class Escalonador(object):
     
     def __init__(self, tempo_medio_servico, servidor):
         
-        self.agenda = {}
         self.fila = Queue()
         self.servidor = servidor
         self.tempo_medio_servico = tempo_medio_servico
