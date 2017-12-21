@@ -72,7 +72,7 @@ def get_params_distribuicao(dist_enum, params):
 		params_string = "Lambda: %.2f" % (lambd)
 						
 	elif dist_enum == TipoDistribuicao.NORMAL:
-		media, desvio_padra0 = params
+		media, desvio_padrao  = params
 		params_string = "Média: %d, Desvio padrão: %d" % (media, desvio_padrao)
 		
 	return params_string
@@ -88,7 +88,7 @@ def get_params_distribuicao_to_csv(dist_enum, params):
 		return "%.2f,NA" % (lambd)
 						
 	elif dist_enum == TipoDistribuicao.NORMAL:
-		media, desvio_padra0 = params
+		media, desvio_padrao = params
 		return "%.2f,%.2f" % (media, desvio_padrao)
 
 def get_csv_file_name(dist_enum):

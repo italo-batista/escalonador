@@ -59,20 +59,17 @@ class Simulador(object):
 				if (servidor.is_livre()):
 					if (not escalonador.is_fila_vazia()):												
 						proximo_termino = int(escalonador.atender_fregues_em_fila())
-						print 'free, prox termino:', proximo_termino - self.tempo_inicio
 						
 					elif (self.chegou_fregues(proxima_chegada)):
 						fregues = Fregues()
 						proxima_chegada = int(current_time() + self.distribuicao.sample())
 						proximo_termino = int(escalonador.escalonar(fregues))
-						print 'free, chegou fregues! prox termino', proximo_termino - self.tempo_inicio, ' proxima chegada', proxima_chegada - self.tempo_inicio
 																
 				else:
 					if (self.chegou_fregues(proxima_chegada)):
 						fregues = Fregues()
 						escalonador.enfileirar(fregues)
-						print 'not free, enfileirar cliente'
-				
+						
 				escalonador.update_qnt_media_elems_na_fila(self.get_momento())
 				time.sleep(0.9)
 
@@ -101,5 +98,5 @@ class Simulador(object):
 		print current_time() - self.tempo_inicio
 		return current_time() - self.tempo_inicio
 
-sim = Simulador(TipoDistribuicao.EXPOENCIAL, [2], 1, 3, 2)
+sim = Simulador(TipoDistribuicao.NORMAL, [0, 0.4], 1, 5, 15)
 sim.run()
