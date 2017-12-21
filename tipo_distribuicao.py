@@ -4,7 +4,7 @@ import random
 
 class TipoDistribuicao(Enum):
 	UNIFORME = 1
-	EXPOENCIAL = 2
+	EXPONENCIAL = 2
 	NORMAL = 3
 
 class Distribuicao(object):
@@ -19,7 +19,7 @@ class Distribuicao(object):
 			inf, sup = self.params
 			dist = random.uniform(inf, sup)
 
-		elif self.tipo == TipoDistribuicao.EXPOENCIAL:
+		elif self.tipo == TipoDistribuicao.EXPONENCIAL:
 			lambd = 1.0 / self.params[0]
 			dist = random.expovariate(lambd)
 

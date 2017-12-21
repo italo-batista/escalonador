@@ -12,7 +12,7 @@ class Escalonador(object):
         self.tempo_medio_atendendo = 0
         self.requisicoes_atendidas = 0
         self.qnt_media_elems_na_fila = 1.0
-        self.distribuicao = Distribuicao(TipoDistribuicao.EXPOENCIAL, [self.tempo_medio_servico])
+        self.distribuicao = Distribuicao(TipoDistribuicao.EXPONENCIAL, [self.tempo_medio_servico])
 
     def is_fila_vazia(self):
         return self.fila.empty()

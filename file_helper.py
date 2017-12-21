@@ -56,7 +56,7 @@ def write_to_csv(dist_chegada_enum, dist_params, tempo_medio_servico, duracao_si
 def enum_to_tipo_distribuicao(dist_enum):
 	
 	map_dist_chegada = {TipoDistribuicao.UNIFORME:"Uniforme",
-					TipoDistribuicao.EXPOENCIAL: "Exponencial",
+					TipoDistribuicao.EXPONENCIAL: "Exponencial",
 					TipoDistribuicao.NORMAL: "Normal"
 	}
 	return map_dist_chegada[dist_enum]
@@ -67,7 +67,7 @@ def get_params_distribuicao(dist_enum, params):
 		inf, sup = params
 		params_string = "Limite inferior: %d, Limite superior: %d" % (inf, sup)
 			  
-	elif dist_enum == TipoDistribuicao.EXPOENCIAL:
+	elif dist_enum == TipoDistribuicao.EXPONENCIAL:
 		lambd = 1.0 / params[0]
 		params_string = "Lambda: %.2f" % (lambd)
 						
@@ -83,7 +83,7 @@ def get_params_distribuicao_to_csv(dist_enum, params):
 		inf, sup = params
 		return "%.2f,%.2f" % (inf, sup)
 			  
-	elif dist_enum == TipoDistribuicao.EXPOENCIAL:
+	elif dist_enum == TipoDistribuicao.EXPONENCIAL:
 		lambd = 1.0 / params[0]
 		return "%.2f,NA" % (lambd)
 						
@@ -96,7 +96,7 @@ def get_csv_file_name(dist_enum):
 	if dist_enum == TipoDistribuicao.UNIFORME:
 		return "dados/resultados-uniforme.csv"
 			  
-	elif dist_enum == TipoDistribuicao.EXPOENCIAL:
+	elif dist_enum == TipoDistribuicao.EXPONENCIAL:
 		return "dados/resultados-exponencial.csv"
 						
 	elif dist_enum == TipoDistribuicao.NORMAL:

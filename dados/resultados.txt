@@ -1,0 +1,405 @@
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.756388772618
+Quantidade média de elementos em espera: 0.289256198347
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.460699399312
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.578509612517
+Quantidade média de elementos em espera: 0.0909090909091
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.741561716253
+Quantidade média de elementos em espera: 0.0909090909091
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.417998075485
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.64624196291
+Quantidade média de elementos em espera: 0.0826446280992
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.712718595158
+Quantidade média de elementos em espera: 0.0909090909091
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.455360074838
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.762213641947
+Quantidade média de elementos em espera: 0.0727272727273
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.523246586323
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 13
+Quantidade de Requisições atendidas: 13
+Tempo médio de atendimento: 0.568680689885
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.366369465987
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.458010534445
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.49621610208
+Quantidade média de elementos em espera: 0.0727272727273
+
+Distribuição de chegada: Uniforme
+Parametros: Limite inferior: 0, Limite superior: 1
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.467870408838
+Quantidade média de elementos em espera: 0.0909090909091
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 13
+Quantidade de Requisições atendidas: 13
+Tempo médio de atendimento: 0.363976423557
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.467155992985
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.725251652978
+Quantidade média de elementos em espera: 0.0909090909091
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.339697142442
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 13
+Quantidade de Requisições atendidas: 13
+Tempo médio de atendimento: 0.561506179663
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.415777336467
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.771610108289
+Quantidade média de elementos em espera: 0.0909090909091
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.503925204277
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.521091163158
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 13
+Quantidade de Requisições atendidas: 13
+Tempo médio de atendimento: 0.411875027877
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.521880090237
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.627575834592
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.474612096945
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.418597241243
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Normal
+Parametros: Média: 0, Desvio padrão: 0
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 10
+Quantidade de Requisições atendidas: 10
+Tempo médio de atendimento: 1.18098199368
+Quantidade média de elementos em espera: 0.330578512397
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 9
+Quantidade de Requisições atendidas: 9
+Tempo médio de atendimento: 0.523041115867
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.760980107568
+Quantidade média de elementos em espera: 0.0909090909091
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 8
+Quantidade de Requisições atendidas: 8
+Tempo médio de atendimento: 0.654588550329
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.389423478733
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.521445599469
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 12
+Quantidade de Requisições atendidas: 12
+Tempo médio de atendimento: 0.633158028126
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 10
+Quantidade de Requisições atendidas: 10
+Tempo médio de atendimento: 0.631252169609
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 9
+Quantidade de Requisições atendidas: 9
+Tempo médio de atendimento: 1.04228403833
+Quantidade média de elementos em espera: 0.30303030303
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 10
+Quantidade de Requisições atendidas: 10
+Tempo médio de atendimento: 0.407102513313
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 10
+Quantidade de Requisições atendidas: 10
+Tempo médio de atendimento: 0.483995461464
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 9
+Quantidade de Requisições atendidas: 9
+Tempo médio de atendimento: 0.658272822698
+Quantidade média de elementos em espera: 0.0818181818182
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 10
+Quantidade de Requisições atendidas: 10
+Tempo médio de atendimento: 0.484216237068
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 9
+Quantidade de Requisições atendidas: 9
+Tempo médio de atendimento: 0.868809514576
+Quantidade média de elementos em espera: 0.0757575757576
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 8
+Quantidade de Requisições atendidas: 8
+Tempo médio de atendimento: 0.130240231752
+Quantidade média de elementos em espera: 0.0
+
+Distribuição de chegada: Exponencial
+Parametros: Lambda: 1.00
+Valor médio serviço passado: 0.5
+Duração da Simulação: 10
+Quantidade de Requisições recebidas: 11
+Quantidade de Requisições atendidas: 11
+Tempo médio de atendimento: 0.425760074095
+Quantidade média de elementos em espera: 0.0826446280992
+

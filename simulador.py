@@ -51,8 +51,6 @@ class Simulador(object):
 				# se não está livre 
 					# se chegou freguês, coloca na fila
 
-				print current_time() - self.tempo_inicio, self.requisicoes_recebidas
-
 				if (current_time() >= proximo_termino):
 					servidor.liberar()
 
@@ -95,8 +93,14 @@ class Simulador(object):
 			return False
 	
 	def get_momento(self):
-		print current_time() - self.tempo_inicio
 		return current_time() - self.tempo_inicio
 
-sim = Simulador(TipoDistribuicao.NORMAL, [0, 0.4], 1, 5, 15)
+sim = Simulador(TipoDistribuicao.UNIFORME, [0, 1], 0.5, 10, 15)
 sim.run()
+
+sim = Simulador(TipoDistribuicao.NORMAL, [0.5, 0.4], 0.5, 10, 15)
+sim.run()
+
+sim = Simulador(TipoDistribuicao.EXPONENCIAL, [1], 0.5, 10, 15)
+sim.run()
+
