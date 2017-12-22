@@ -1,0 +1,26 @@
+---
+title: "analise_de_resultados"
+author: "Italo"
+date: "21 de dezembro de 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+library(dplyr)
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+resultados_uniforme <- read_csv("../dados/resultados-uniforme.csv")
+resultados_normal <- read_csv("../dados/resultados-normal.csv")
+resultados_exponencial <- read_csv("../dados/resultados-exponencial.csv")
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+glimpse(resultados_exponencial)
+```
+

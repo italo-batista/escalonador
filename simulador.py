@@ -95,12 +95,12 @@ class Simulador(object):
 	def get_momento(self):
 		return current_time() - self.tempo_inicio
 
-sim = Simulador(TipoDistribuicao.UNIFORME, [0, 1], 0.5, 10, 15)
+sim = Simulador(TipoDistribuicao.UNIFORME, [0, 1], 1, 10, 30)
 sim.run()
 
-sim = Simulador(TipoDistribuicao.NORMAL, [0.5, 0.4], 0.5, 10, 15)
+sim = Simulador(TipoDistribuicao.NORMAL, [0.5, 0.4], 1, 10, 30)
 sim.run()
 
-sim = Simulador(TipoDistribuicao.EXPONENCIAL, [1], 0.5, 10, 15)
+sim = Simulador(TipoDistribuicao.EXPONENCIAL, [1], 1, 10, 30)
 sim.run()
 
