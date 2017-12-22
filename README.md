@@ -1,6 +1,6 @@
 # Escalonador de 1 fila
 
-Implementação de um escalonador de eventos com 1 fila, no contexto do problema de Fregueses e Clientes de uma barbearia.
+Implementação de um escalonador de eventos com 1 fila, no contexto do problema de Fregueses de uma Barbearia.
 
 Para rodar, configure no fim do arquivo simulacao.py e execute como 
 
