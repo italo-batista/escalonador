@@ -94,10 +94,10 @@ def get_params_distribuicao_to_csv(dist_enum, params):
 def get_csv_file_name(dist_enum):
 	
 	if dist_enum == TipoDistribuicao.UNIFORME:
-		return "dados/resultados-uniforme.csv"
+		return "../dados/resultados-uniforme.csv"
 			  
 	elif dist_enum == TipoDistribuicao.EXPONENCIAL:
-		return "dados/resultados-exponencial.csv"
+		return "../dados/resultados-exponencial.csv"
 						
 	elif dist_enum == TipoDistribuicao.NORMAL:
-		return "dados/resultados-normal.csv"
+		return "../dados/resultados-normal.csv"

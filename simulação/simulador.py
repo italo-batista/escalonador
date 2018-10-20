@@ -11,7 +11,7 @@ import argparse
 parser = argparse.ArgumentParser(description='Customize a execução de uma simulação')
 parser.add_argument('--tipo-distribuicao', type=str, default='uniforme',
                         help='tipo de distribuição de chegada (opções: uniforme, normal, exponencial)')
-parser.add_argument('--params-distribuicao', type=int, nargs='+', default=[0, 1],
+parser.add_argument('--params-distribuicao', type=float, nargs='+', default=[0, 1],
                         help="""parâmetros específicos a depender do tipo de distribuição 
                         (ex: para uma distribuição uniforme cujor valor deve estar entre 0 e 1,
                         os parametros são 0 e 1).""")
