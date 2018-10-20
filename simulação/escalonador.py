@@ -1,5 +1,5 @@
 from Queue import Queue
-from time_helper import current_time
+from util.time_helper import current_time
 from tipo_distribuicao import TipoDistribuicao, Distribuicao
 
 class Escalonador(object):

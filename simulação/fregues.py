@@ -1,4 +1,4 @@
-from time_helper import current_time
+from util.time_helper import current_time
 
 class Fregues(object):
 	
