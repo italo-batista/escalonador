@@ -7,6 +7,18 @@ from util.time_helper import current_time
 from util.file_helper import write_results
 from tipo_distribuicao import TipoDistribuicao, Distribuicao
 
+import argparse
+parser = argparse.ArgumentParser(description='Customize a execução de uma simulação')
+parser.add_argument('--tipo-distribuicao', type=str, default='uniforme',
+                        help='tipo de distribuição de chegada (opções: uniforme, normal, exponencial)')
+parser.add_argument('--params-distribuicao', type=int, nargs='+', default=[0, 1],
+                        help="""parâmetros específicos a depender do tipo de distribuição 
+                        (ex: para uma distribuição uniforme cujor valor deve estar entre 0 e 1,
+                        os parametros são 0 e 1).""")
+parser.add_argument('--tmp-medio-servico', type=int, default=1, help='tempo medio de servico de um cliente em seg')
+parser.add_argument('--tmp-simulacao', type=int, default=10, help='duracao total desejada para a simulação em seg')
+parser.add_argument('--n-repeticoes', type=int, default=30, help='quantidade de repetições')
+
 
 class Simulador(object):
 
@@ -90,11 +102,22 @@ class Simulador(object):
     def get_momento(self):
         return current_time() - self.tempo_inicio
 
-sim = Simulador(TipoDistribuicao.UNIFORME, [0, 1], 1, 10, 30)
-sim.run()
 
-sim = Simulador(TipoDistribuicao.NORMAL, [0.5, 0.4], 1, 10, 30)
-sim.run()
+if __name__ == "__main__":    
+    args = parser.parse_args()
+    
+    tipo_distribuicao = args.tipo_distribuicao
+    params_distribuicao = args.params_distribuicao
+    n_repeticoes = args.n_repeticoes
+    tmp_medio_servico = args.tmp_medio_servico
+    tmp_simulacao = args.tmp_simulacao
 
-sim = Simulador(TipoDistribuicao.EXPONENCIAL, [1], 1, 10, 30)
-sim.run()
+    if tipo_distribuicao == 'uniforme':
+        sim = Simulador(TipoDistribuicao.UNIFORME, [0, 1], 1, 10, 30)
+    elif tipo_distribuicao == 'normal':
+        sim = Simulador(TipoDistribuicao.NORMAL, [0.5, 0.4], 1, 10, 30)
+    elif tipo_distribuicao == 'exponencial':
+        sim = Simulador(TipoDistribuicao.EXPONENCIAL, [1], 1, 10, 30)
+    else:
+        raise SystemExit
+    
