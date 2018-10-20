@@ -39,8 +39,7 @@ class Simulador(object):
         self.tempo_medio_servico = tempo_medio_servico
         self.params_distribuicao = params_distribuicao
         self.tipo_distribuicao_chegada = tipo_distribuicao_chegada
-        self.distribuicao = Distribuicao(
-            self.tipo_distribuicao_chegada, self.params_distribuicao)
+        self.distribuicao = Distribuicao(self.tipo_distribuicao_chegada, self.params_distribuicao)
 
     def run(self):
 
@@ -113,11 +112,13 @@ if __name__ == "__main__":
     tmp_simulacao = args.tmp_simulacao
 
     if tipo_distribuicao == 'uniforme':
-        sim = Simulador(TipoDistribuicao.UNIFORME, [0, 1], 1, 10, 30)
+        sim = Simulador(TipoDistribuicao.UNIFORME, params_distribuicao, tmp_medio_servico, tmp_simulacao, n_repeticoes)
     elif tipo_distribuicao == 'normal':
-        sim = Simulador(TipoDistribuicao.NORMAL, [0.5, 0.4], 1, 10, 30)
+        sim = Simulador(TipoDistribuicao.NORMAL, params_distribuicao, tmp_medio_servico, tmp_simulacao, n_repeticoes)
     elif tipo_distribuicao == 'exponencial':
-        sim = Simulador(TipoDistribuicao.EXPONENCIAL, [1], 1, 10, 30)
+        sim = Simulador(TipoDistribuicao.EXPONENCIAL, params_distribuicao, tmp_medio_servico, tmp_simulacao, n_repeticoes)
     else:
         raise SystemExit
+    
+    sim.run()
     
