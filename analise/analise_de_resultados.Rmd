@@ -12,6 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(readr)
 library(dplyr)
+library(ggplot2)
+theme_set(theme_light())
 ```
 
 ```{r message=FALSE, warning=FALSE, error=FALSE}
@@ -21,6 +23,99 @@ resultados_exponencial <- read_csv("../dados/resultados-exponencial.csv")
 ```
 
 ```{r message=FALSE, warning=FALSE, error=FALSE}
-glimpse(resultados_exponencial)
+resultados = rbind(resultados_exponencial, resultados_normal, resultados_uniforme)
 ```
 
+```{r message=FALSE, warning=FALSE, error=FALSE}
+resultados %>% filter(TEMPO_MEDIO_ATENDIMENTO == 0.5) %>%
+  ggplot(aes(x=as.factor(DIST_CHEGADA), y=TEMPO_MEDIO_ATENDIDO, colour=as.factor(DIST_CHEGADA))) + 
+  #geom_jitter(width = .4, height = .07, alpha = .6) +
+  geom_boxplot(alpha = .4, width = 0.95) +
+  scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9")) +
+  labs(title = "Imagem 1 - Tempo médio de serviço = 0.5",
+       x = "Tipo de distribuição de chegada", 
+       y ="Tempo médio de atendimento de freguês") +
+  theme(legend.position="none") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+resultados %>% filter(TEMPO_MEDIO_ATENDIMENTO == 1) %>%
+  ggplot(aes(x=as.factor(DIST_CHEGADA), y=TEMPO_MEDIO_ATENDIDO, colour=as.factor(DIST_CHEGADA))) + 
+  geom_boxplot(alpha = .4, width = 0.95) +
+  scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9")) +
+  labs(title = "Imagem 2 - Tempo médio de serviço = 1",
+       x = "Tipo de distribuição de chegada", 
+       y ="Tempo médio de atendimento de freguês") +
+  theme(legend.position="none") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+resultados %>% filter(TEMPO_MEDIO_ATENDIMENTO == 0.5) %>%
+  ggplot(aes(x=as.factor(DIST_CHEGADA), y=QNT_MEDIA_ELEMS_EM_FILA, colour=as.factor(DIST_CHEGADA))) + 
+  geom_boxplot(alpha = .4, width = 0.95) +
+  scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9")) +
+  labs(title = "Imagem 5 - Tempo médio de serviço = 0.5",
+       x = "Tipo de distribuição de chegada", 
+       y ="Quantidade média de fregueses na fila") +
+  theme(legend.position="none") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+resultados %>% filter(TEMPO_MEDIO_ATENDIMENTO == 1) %>%
+  ggplot(aes(x=as.factor(DIST_CHEGADA), y=QNT_MEDIA_ELEMS_EM_FILA, colour=as.factor(DIST_CHEGADA))) + 
+  geom_boxplot(alpha = .4, width = 0.95) +
+  scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9")) +
+  labs(title = "Imagem 6 - Tempo médio de serviço = 1",
+       x = "Tipo de distribuição de chegada", 
+       y ="Quantidade média de fregueses na fila") +
+  theme(legend.position="none") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+resultados %>%
+  ggplot(aes(x=as.factor(DIST_CHEGADA), y=TEMPO_MEDIO_ATENDIDO, colour=as.factor(DIST_CHEGADA))) + 
+  geom_boxplot()
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+resultados %>%
+  ggplot(aes(x=as.factor(TEMPO_MEDIO_ATENDIMENTO), y=TEMPO_MEDIO_ATENDIDO, colour=as.factor(TEMPO_MEDIO_ATENDIMENTO))) + 
+  geom_boxplot()
+```
+
+```{r}
+resultados$porc_req_atendidas = resultados$QNT_REQUISICOES_ATENDIDAS / resultados$QNT_REQUISICOES_RECEBIDAS
+resultados$porc_req_atendidas = resultados$porc_req_atendidas * 100
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+resultados %>%
+  ggplot(aes(x=as.factor(DIST_CHEGADA), y=porc_req_atendidas, colour=as.factor(DIST_CHEGADA))) + 
+  geom_boxplot(alpha = .4, width = 0.95) +
+  scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9")) +
+  facet_wrap(~ TEMPO_MEDIO_ATENDIMENTO, ncol = 5) +
+  
+  labs(title = "Imagem 3 - Porcentagem de requisições atendidas",
+       x = "Tipo de distribuição de chegada", 
+       y ="Porcentagem de requisições atendidas") +
+  theme(legend.position="none") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+resultados %>%
+  ggplot(aes(x=as.factor(DIST_CHEGADA), y=QNT_REQUISICOES_ATENDIDAS, colour=as.factor(DIST_CHEGADA))) + 
+  geom_boxplot(alpha = .4, width = 0.95) +
+  scale_color_manual(values=c("#999999", "#E69F00", "#56B4E9")) +
+  facet_wrap(~ TEMPO_MEDIO_ATENDIMENTO, ncol = 5) +
+  
+  labs(title = "Imagem 4 - Totalidade de requisições atendidas",
+       x = "Tipo de distribuição de chegada", 
+       y ="Quantidade de requisições atendidas") +
+  theme(legend.position="none") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
