@@ -44,14 +44,6 @@ class Simulador(object):
 
             while(not self.fim_execucao(self.tempo_inicio)):
 
-                # se o servidor está livre.
-                            # se tem fregues na fila, atende fregues, escalonando seu termino
-                            # se chega freguês, escala o termino do fregues
-                                    # pega chegada de próximo cliente
-                                    # enquanto termino n ocorrer, servidor está ocupado. sleep do tempo para o termino
-                # se não está livre
-                            # se chegou freguês, coloca na fila
-
                 if (current_time() >= proximo_termino):
                     servidor.liberar()
 

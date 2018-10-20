@@ -8,7 +8,7 @@ class Servidor(object):
 
 	def liberar(self):
 		self.livre = True
-
-   	def ocupar(self):
-   		self.livre = False
+		
+	def ocupar(self):
+		self.livre = False
 	   
